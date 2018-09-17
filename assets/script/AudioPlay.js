@@ -1,0 +1,45 @@
+cc.Class({
+    extends: cc.Component,
+    properties: {
+        bgm:{
+            default:null,
+            type:cc.AudioSource,
+        },
+        overBgm:{
+            default:null,
+            type:cc.AudioSource,
+        },
+        trueBgm:{
+            default:null,
+            type:cc.AudioSource,
+        },
+        failBgm:{
+            default:null,
+            type:cc.AudioSource,
+        },
+    },
+    onBgm:function(){
+         this.bgm.play();
+    },
+    unBgm:function(){
+         this.bgm.pause();
+    },
+    onOver:function(){
+        this.overBgm.play();
+    },
+    unOver:function(){
+        this.overBgm.pause();
+    },
+    onTrue:function(){
+        this.trueBgm.play();
+    },
+    unTrue:function(){
+        this.trueBgm.pause();
+    },
+    onFail:function(){
+        this.failBgm.play();
+    },
+    unFail:function(){
+        this.failBgm.pause();
+    },
+});
